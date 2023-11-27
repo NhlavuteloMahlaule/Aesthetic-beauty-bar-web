@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Body Beauty Clinic And Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        /* ... Your existing styles ... */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFBDD5;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+    
+        /* Header Section */
+        .header {
+            background-color: #FF3E50;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .header .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    
+        .header .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 20px;
+            text-decoration: none;
+            background-color: #FF5E78;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+    
+        .header .btn:hover {
+            background-color: #FF3E50;
+        }
+    
+       /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #FF5E78;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar li {
+        margin: 0 10px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+        color: #FF5E78;
+    }
+    
+        
+    
+        /* Slideshow Section */
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+    
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        /* Welcome Message Section */
+        .beauty-bar {
+            background-color: #FF5E78;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        
+        
+        /* Footer Section */
+        .footer {
+            background-color: #FF3E50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+    
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        .box {
+            flex: 1;
+            max-width: 300px;
+            margin: 15px;
+        }
+    
+        .box a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+    
+        .box i {
+            margin-right: 10px;
+        }
+    
+        .box .fas {
+            color: #FF5E78; /* Icon color */
+        }
+    
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    
+        .social-icons a:hover {
+            color: #3543f5; /* Hover color */
+        }
+    
+        .credit {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+   
+
+         
+        <!-- Header Section -->
+  <section class="header">
+    <div class="flex">
+        <a href="#home" class="logo">BODY BEAUTY CLINIC & AESTHETICS</a>
+        <a href="#availability" class="btn">Check Availability</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+    <nav class="navbar">
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+
+            
+        </ul>
+        
+    </nav>
+</section>
+<!-- Header Section Ends -->
+
+<!-- Welcome Message Section -->
+<div class="beauty-bar">
+    <p>About Body Beauty Clinic And Aesthetics.</p>
+</div>
+</nav>
+<!-- Slideshow Section -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="Screenshot (13).png" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+            <img src="Screenshot (14).png" alt="Slide 2">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="Screenshot (15).png" alt="Slide 2">
+        </div>
+
+        
+        
+        <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Initialize Swiper -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    });
+</script>
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <a href="tel:+27 66 375 2976"><i class="fas fa-phone"></i> +27 66 375 2976</a>
+            <a href="bodybeautyclinicaesthetics.com"><i class="far fa-envelope"></i> bodybeautyclinicaesthetics@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> STAND NO 222 GREENVALLEY, NEXT TO NAZARENE REVIVAL CHURCH, OPPOSITE ACORNHOEK MALL</a>
+        </div>
+
+        <div class="box">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="box social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <div class="credit">&copy; copyright @ 2023 by telo webs | all rights reserved!</div>
+</section>
+
+    <!-- Initialize Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>

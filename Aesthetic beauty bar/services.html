@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your existing styles here */
+
+        /* Swiper Styles */
+        .swiper-container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Your existing navigation code -->
+
+    <!-- Services Section Starts -->
+    <section class="services" id="services">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="energy_booster_image.jpg" alt="Energy Booster"></div>
+                <!-- Add more slides with different service images -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Add descriptions or other content for each service option -->
+
+    </section>
+    <!-- Services Section Ends -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
